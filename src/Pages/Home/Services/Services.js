@@ -3,7 +3,6 @@ import Service from "../Service/Service";
 
 const Services = () => {
   const [services, setServices] = useState([]);
-  console.log(services);
   useEffect(() => {
     fetch("services.json")
       .then((res) => res.json())
@@ -12,7 +11,7 @@ const Services = () => {
   return (
     <div>
       <h2 className="text-center text-danger">Our Service</h2>
-      <div className="row">
+      <div className="row ">
         {services.map((service) => (
           <Service key={service.id} service={service}></Service>
         ))}

@@ -1,12 +1,9 @@
 .service-container{
     border: 1px solid lightgray;
     border-radius: 8px;
-    height: 500px;
+    height: 450px;
     width: 350px;
     position: relative;
-}
-.service-img{
-    width:100%;
 }
 .service-infro{
     padding-bottom: 40px;
