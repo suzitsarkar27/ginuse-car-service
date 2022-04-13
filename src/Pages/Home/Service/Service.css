@@ -1,0 +1,27 @@
+.service-container{
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    height: 500px;
+    width: 350px;
+    position: relative;
+}
+.service-img{
+    width:100%;
+}
+.service-infro{
+    padding-bottom: 40px;
+}
+.service-infro p{
+
+    padding-top:3px ;
+   
+}
+.service-button{
+  background-color:green;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius:4px;
+}
