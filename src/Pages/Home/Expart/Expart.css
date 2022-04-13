@@ -5,6 +5,6 @@
     width: 350px;
     position: relative;
 }
-.img-container{
-    width:250px;
-}
+/* .img-container{
+    max-width: 100%;
+} */
