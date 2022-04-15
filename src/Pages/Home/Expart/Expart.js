@@ -1,14 +1,26 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Expart.css";
 
 const Expart = ({ data }) => {
-  const { img, name } = data;
+  const { id, img, name, descripton, price } = data;
+  const navigate = useNavigate();
+  const navigateToService = (id) => {
+    navigate(`/service/ ${id}`);
+  };
   return (
-    <div className="col-sm-12 col-md-6 col-lg-4 col-xl-3 g-5">
-      <div className="expart-engaineer container">
-        <img className="img-container w-100" src={img} alt="" />
+    <div
+      className="col-sm-12 col-md-6 col-lg-4 col-xl-3 g-5
+    text-center"
+    >
+      <div className="service-comtainer">
+        <img className="w-100" src={img} alt="" />
         <h2>Name:{name}</h2>
-        <button className="service-button">Book Now</button>
+        <p>Price{price}</p>
+        <p>{descripton}</p>
+        <button onClick={() => navigateToService(id)} className="servie-btn">
+          Book Now
+        </button>
       </div>
     </div>
   );

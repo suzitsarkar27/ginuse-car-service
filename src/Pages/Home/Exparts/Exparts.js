@@ -8,19 +8,61 @@ import expart5 from "../../../images/experts/expert-5.jpg";
 import expart6 from "../../../images/experts/expert-6.png";
 import Expart from "../Expart/Expart";
 const datas = [
-  { id: 1, name: "Enginer Mishu", img: expart1 },
-  { id: 2, name: "Enginer Suzit", img: expart2 },
-  { id: 3, name: "Enginer Dipok", img: expart3 },
-  { id: 4, name: "Enginer Uttom", img: expart4 },
-  { id: 5, name: "Enginer Uttom", img: expart5 },
-  { id: 6, name: "Enginer Uttom", img: expart6 },
+  {
+    id: 1,
+    name: "Enginer Mishu",
+    img: expart1,
+    descripton:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, enim?",
+    price: "200",
+  },
+  {
+    id: 2,
+    name: "Enginer Suzit",
+    img: expart2,
+    descripton:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, enim?",
+    price: "200",
+  },
+  {
+    id: 3,
+    name: "Enginer Dipok",
+    img: expart3,
+    descripton:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, enim?",
+    price: "200",
+  },
+  {
+    id: 4,
+    name: "Enginer Uttom",
+    img: expart4,
+    descripton:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, enim?",
+    price: "200",
+  },
+  {
+    id: 5,
+    name: "Enginer Uttom",
+    img: expart5,
+    descripton:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, enim?",
+    price: "200",
+  },
+  {
+    id: 6,
+    name: "Enginer Uttom",
+    img: expart6,
+    descripton:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, enim?",
+    price: "200",
+  },
 ];
 
 const Exparts = () => {
   return (
-    <div>
+    <div className="container" id="exparts">
       <h2 className="text-center text-danger mt-5">Our Expart Engineer</h2>
-      <div className="expart-container row">
+      <div className="row ">
         {datas.map((data) => (
           <Expart data={data} key={data.id}></Expart>
         ))}
